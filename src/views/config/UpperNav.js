@@ -7,8 +7,8 @@ const config={
          {"title":"Overview","url":"/overview"}
     ]},
     {"title":"DOCS","rows":[
-      {"title":"0xBitcoin Token","url":"https://0xBitcoin.org"},
-      {"title":"Github","url":"https://github.com/0xbitcoin/tokenpool"}
+      {"title":"Sigmoid Token","url":"https://sigmoid-token.github.io"},
+      {"title":"Github","url":"https://github.com/sigmoid-token/sigmoid-token"}
     ]}
   ]
 

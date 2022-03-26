@@ -43,8 +43,9 @@
 <script>
 
 const Web3 = require('web3')
+import { cav } from '/caver.js'
 
-var BN = Web3.utils.BN;
+var BN = cav.utils.BN;
 
 import Web3NetButton from './Web3NetButton.vue'
 

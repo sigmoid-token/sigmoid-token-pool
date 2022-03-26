@@ -55,7 +55,7 @@
 
 const Web3 = require('web3');
 const web3utils = Web3.utils;
-const BigNumber = Web3.utils.BN;
+const BigNumber = cav.utils.BN;
 
 const contractData = require('../config/contractdata.json')
 
@@ -113,15 +113,15 @@ export default class Web3Plug {
   static getWeb3NetworkName(networkId){
 
     if(networkId == mainnetChainID){
-      return 'mainnet'
+      return 'cypress'
     }
 
     if(networkId == kovanChainID){
-      return 'kovan'
+      return 'baobab'
     }
 
     if(networkId == goerliChainId){
-      return 'goerli'
+      return 'baobab'
     }
 
 
@@ -150,35 +150,31 @@ export default class Web3Plug {
   }
 
 
-  getTokenContract(web3, contractAddress)
+  getTokenContract(contractAddress)
   {
 
-    var tokenContract = new web3.eth.Contract(tokenContractABI,contractAddress)
+    var tokenContract = new cav.contract(tokenContractABI,contractAddress)
 
     return tokenContract;
   }
 
 
-  getCustomContract(web3, contractABI, contractAddress)
+  getCustomContract(contractABI, contractAddress)
   {
 
-    var contract = new web3.eth.Contract(contractABI,contractAddress)
+    var contract = new cav.contract(contractABI,contractAddress)
 
     return contract;
   }
 
   async getETHBalance(ownerAddress)
   {
-    var web3 = new Web3(Web3.givenProvider);
-
-    return web3.eth.getBalance(ownerAddress);
+    return cav.rpc.klay.getBalance(ownerAddress);
   }
 
   async getTokenBalance(contractAddress, ownerAddress)
   {
-    var web3 = new Web3(Web3.givenProvider);
-
-    var tokenContract = new web3.eth.Contract(tokenContractABI, contractAddress, {});
+    var tokenContract = new cav.contract(tokenContractABI, contractAddress, {});
 
 
     var balance = await tokenContract.methods.balanceOf(ownerAddress).call();

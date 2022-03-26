@@ -26,7 +26,7 @@ if( workerData!=null && workerData.pool_env == "production" )
  
 
 
-let poolConfigFull = FileUtils.readJsonFileSync('/pool.config.json');
+let poolConfigFull = FileUtils.readJsonFileSync('/pool-config.json');
 let poolConfig = poolConfigFull[pool_env]
  
 
@@ -47,9 +47,9 @@ async function runTask( )
 
     await mongoInterface.init( 'tokenpool_'.concat(pool_env))
 
-    let tokenContract = await ContractHelper.getTokenContract(  web3 ,  poolConfig  )  
+    let tokenContract = await ContractHelper.getTokenContract( poolConfig  )  
     
-      await TokenDataHelper.collectTokenParameters( tokenContract,  web3, mongoInterface) 
+      await TokenDataHelper.collectTokenParameters( tokenContract, mongoInterface) 
 
      
     

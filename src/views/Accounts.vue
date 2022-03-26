@@ -110,6 +110,7 @@ import SocketHelper from '../js/socket-helper'
 import MathHelper from '../js/math-helper'
 
 import web3utils from 'web3-utils'
+import { cav } from '/caver.js'
 
 export default {
   name: 'Accounts',
@@ -163,7 +164,7 @@ export default {
 
            console.log('this.accountList', this.accountList)
 
-           this.accountList = this.accountList.filter(x => web3utils.isAddress( x.minerEthAddress ) )
+           this.accountList = this.accountList.filter(x => cav.utils.isAddress( x.minerEthAddress ) )
   
 
 

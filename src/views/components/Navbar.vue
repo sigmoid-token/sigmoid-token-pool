@@ -16,7 +16,7 @@
         <div class="flex-grow">
           <a href="/" class="brand w-nav-brand w--current">
                <img src="@/assets/images/logo.png" height="55"  alt="" class="w-6 m-2">
-            <div class=" inline-block text-xl text-gray-100">Token Mining Pool</div>
+            <div class=" inline-block text-xl text-gray-100">Sigmoid Mining Pool</div>
          </a>
        </div>
 

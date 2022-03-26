@@ -23,11 +23,11 @@
       "gasPriceBoost":10,
       "poolTokenFee": 5,
     
-      "publicAddress": "0xB11ca87E32075817C82Cc471994943a4290f4a14",
-      "privateKey":"",
+      "publicAddress": "0x",
+      "privateKey":"0x",
 
       "networkName":"goerli",
-      "web3Provider":"https://goerli.infura.io/v3/###"
+      "web3Provider":"https://api.baobab.klaytn.net:8651/"
     },
   
     "paymentsConfig":{
@@ -39,11 +39,11 @@
       "minBalanceForTransfer": 1500000000,  
       "rebroadcastPaymentWaitBlocks": 10,
       "minPaymentsInBatch": 1,
-      "publicAddress": "0xB11ca87E32075817C82Cc471994943a4290f4a14",
-      "privateKey":"",
+      "publicAddress": "0x",
+      "privateKey":"0x",
 
       "networkName":"goerli",
-      "web3Provider": "https://goerli.infura.io/v3/###"
+      "web3Provider": "https://api.baobab.klaytn.net:8651/"
     }
   },
   "production":{
@@ -55,12 +55,15 @@
     
     "miningConfig":{
       "minimumShareDifficulty": 5000,
-      "allowCustomVardiff": false 
+      "allowCustomVardiff": false,
+      "privateKey": "0x"
     },
   
     "mintingConfig":{
       "overrideSuspension": false, 
-      "maxGasPriceGwei": 200, 
+      "maxGasPriceGwei": 200,
+      "publicAddress": "0x",
+      "privateKey": "0x",
 
       "gasPriorityFeeGwei":2,
       "gasPriceBoost":10,
@@ -69,7 +72,7 @@
       "poolTokenFee": 5,
       
       "networkName":"mainnet",
-      "web3Provider":"https://mainnet.infura.io/v3/###"
+      "web3Provider":"https://api.baobab.klaytn.net:8651/"
     },
   
     "paymentsConfig":{
@@ -82,7 +85,8 @@
       "rebroadcastPaymentWaitBlocks": 10,
       "minPaymentsInBatch": 1,
       "networkName":"matic",
-      "web3Provider": "https://mainnet.infura.io/v3/###"
+      "publicAddress": "0x",
+      "web3Provider": "https://api.baobab.klaytn.net:8651/"
     }
   }
   

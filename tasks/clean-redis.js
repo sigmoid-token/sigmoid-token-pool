@@ -6,7 +6,7 @@ var peerInterface = require('./lib/peer-interface')
 
 var tokenInterface = require('./lib/token-interface')
 
-var poolConfig = require('./pool.config').config
+var poolConfig = require('./pool-config').config
 var accountConfig = require('./account.config').accounts;
 
 var Web3 = require('web3')
@@ -19,9 +19,9 @@ async function init()
 {
 
    await redisInterface.init()
-   await tokenInterface.init(redisInterface,web3,accountConfig,poolConfig,pool_env)
+   await tokenInterface.init(redisInterface,accountConfig,poolConfig,pool_env)
 
-   await peerInterface.init(web3,accountConfig,poolConfig,redisInterface,tokenInterface,pool_env) //initJSONRPCServer();
+   await peerInterface.init(accountConfig,poolConfig,redisInterface,tokenInterface,pool_env) //initJSONRPCServer();
 
   await peerInterface.cleanRedisData();
 

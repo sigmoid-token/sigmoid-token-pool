@@ -6,15 +6,15 @@
           <h3 class="heading-3 footer">Documentation</h3>
 
 
-          <a href="https://github.com/0xbitcoin/white-paper" target="_blank" class="footer-link">White Paper</a>
+          <a href="https://sigmoid-token.github.io/whitepaper/" target="_blank" class="footer-link">White Paper</a>
           <a href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31#code" target="_blank" class="footer-link">Contract Code</a>
         </div>
         <div class="column-6 w-col w-col-4 w-col-small-4">
           <h3 class="heading-3 footer">Community &amp; Social</h3>
-          <a href="https://github.com/0xbitcoin/tokenpool" target="_blank" class="footer-link">Github</a>
+          <a href="https://github.com/sigmoid-token/sigmoid-token-pool" target="_blank" class="footer-link">Github</a>
 
           <a href="https://discord.gg/QtyRxzw" target="_blank" class="footer-link">Discord</a> 
-          <a href="https://www.reddit.com/r/0xbitcoin/" target="_blank" class="footer-link">Reddit</a></div>
+          <a href="https://www.reddit.com/r/sigmoid-token/" target="_blank" class="footer-link">Reddit</a></div>
         <div class="column-7 w-col w-col-4 w-col-small-4 flex flex-col h-full">
 
           <div class="flex-grow h-32">

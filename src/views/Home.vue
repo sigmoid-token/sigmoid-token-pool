@@ -22,7 +22,7 @@
 
           <div class=" text-center  "  >
             <span class="title font-roboto text-white font-bold text-4xl">
-                Token Mining Pool
+                Sigmoid Mining Pool
             </span>
             </div>
 
@@ -54,14 +54,14 @@
                 <div v-if="poolStatus" class="m-2 text-lg text-white">Pool Status</div>
                 <div v-if="poolStatus && poolStatus.poolStatus == 'active'" >
                     <div class="bg-green-500 w-full p-2">
-                      Token Mining Pool is Active
+                      Sigmoid Mining Pool is Active
                     </div>
                   
                  </div>
 
                  <div v-if="poolStatus && poolStatus.poolStatus != 'active'" >
                    <div class="bg-yellow-500 w-full p-2">
-                        <div class="text-md">Token Mining Pool is Suspended</div>
+                        <div class="text-md">Sigmoid Mining Pool is Suspended</div>
                          <div class="text-sm"> [{{poolStatus.suspensionReason}}] </div>
                    </div>
                   
@@ -79,7 +79,7 @@
       </section>
 
  <section id="guide" class="box background-primary text-center ">
-        <div class='text-lg text-white'> Start Mining 0xBitcoin </div>
+        <div class='text-lg text-white'> Start Mining Sigmoid </div>
 
          <div @click="showInstructions=!showInstructions" class="cursor-pointer   select-none bg-gray-800 p-1 mt-1 rounded text-white text-xs inline-block hover:bg-gray-700"> Instructions</div>
 
@@ -101,21 +101,11 @@
             
      </div>
       <div class="whitespace-sm"></div>
-        
       
-
-        <a href="https://bitbucket.org/LieutenantTofu/cosmic-v3/downloads/COSMiC-v4.1.1-MultiGPU-TMP.zip" target="_blank">
-          <div class='bg-purple-500 p-4 mt-4 rounded text-black inline-block hover:bg-purple-400'>Download the Token Miner (Windows)</div>
-        </a>
-      <div class=" "></div>
-        <a href="https://github.com/lwYeo/SoliditySHA3Miner/releases" target="_blank">
-          <div class='bg-purple-500 p-4 mt-4 rounded text-black inline-block  hover:bg-purple-400'>Download the Token Miner (Linux)</div>
-        </a>
-
      <div class="whitespace-sm"></div>
      
-        <a href="https://github.com/0xbitcoin/0xbitcoin-miner/blob/master/RELEASES.md" target="_blank">
-          <div class='button-bubble button-gradient'>Links for Other Miners</div>
+        <a href="https://github.com/sigmoid-token/sigmoid-cpu-miner" target="_blank">
+          <div class='button-bubble button-gradient'>Download Miner</div>
         </a>
 
      <div class="whitespace-sm"></div>

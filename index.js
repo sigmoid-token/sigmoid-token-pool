@@ -1,5 +1,5 @@
-import  SegfaultHandler from  'segfault-handler' 
-SegfaultHandler.registerHandler('crash.log');
+// import  SegfaultHandler from  'segfault-handler' 
+// SegfaultHandler.registerHandler('crash.log');
 
 //var INFURA_ROPSTEN_URL = 'https://ropsten.infura.io/v3/';
 //var INFURA_MAINNET_URL = 'https://mainnet.infura.io/v3/';
@@ -17,9 +17,8 @@ if( process.argv[2] == "staging" )
 import FileUtils from './lib/util/file-utils.js'
 import  cron from 'node-cron' 
 
-let poolConfigFull = FileUtils.readJsonFileSync('/pool.config.json');
+let poolConfigFull = FileUtils.readJsonFileSync('/pool-config.json');
 let poolConfig = poolConfigFull[pool_env]
-
 
 
 console.log('poolConfig',poolConfig, poolConfigFull)
@@ -94,7 +93,7 @@ async function init( )
 
 
 
-           let peerInterface = new PeerInterface(mongoInterface, poolConfig) 
+           let peerInterface = new PeerInterface(mongoInterface, poolConfig)
 
               peerInterface.update();
               peerInterface.listenForJSONRPC();

@@ -29,6 +29,7 @@
     "@ethereumjs/tx": "^3.4.0",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@tailwindcss/forms": "^0.2.1",
+    "caver-js": "^1.6.8",
     "axios": "^0.21.1",
     "bree": "^6.2.0",
     "cabin": "^9.0.4",
